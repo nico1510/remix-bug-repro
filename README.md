@@ -14,4 +14,6 @@ npm run dev
    - It will log "Loader called with counter $newValue"
 3. Even though the loader was called, the counter on the page will still show the old value
 
-4. (OPTIONAL) Remove the `shouldRevalidate` function from `main.tsx` and the bug will go away
+4. (OPTIONAL)
+   - Either remove the `shouldRevalidate` function from `main.tsx` and the bug will go away
+   - Or remove use `Form` component on `main.intro.tsx` instead of `useFetcher` and the bug will go away
